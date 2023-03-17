@@ -1,0 +1,32 @@
+.physicianSelectionPanel {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .doctorCard {
+      background-color: lightblue;
+      width: 45%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 20px 2%;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      border-radius: 10px;
+      border: 1px solid lightgrey;
+      margin-bottom: 10px;
+  }
+  .doctorPhoto
+  {
+      width: 35%;
+      padding-right: 5%;
+      min-width: 150px;
+  }
+  .doctorPhoto img
+  {
+      width: 100%;
+      border-radius: 20px;
+  }
+  
