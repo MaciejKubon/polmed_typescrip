@@ -1,0 +1,43 @@
+nav
+{
+    width: 100%;
+
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 0.5em 1.5em rgba(0,0,0,0.1);
+
+}
+.choiceOfSpecialitiesButton
+{
+    margin: 5px 0px;
+    width: 120px;
+    height: 40px;
+    background-color: rgba(0,0,0,0);
+    color: #666;
+    font-size: 1em;
+    transition: 300ms;
+    padding: auto 30px;
+}
+.choiceOfSpecialitiesButton:hover
+{
+    color: #0091ff;
+    cursor: pointer;
+    background-color: #def3fa;
+    transition: 300ms;
+    border-radius: 10px;
+    border: 0px solid #def3fa;
+}
+nav #activeBtn
+{
+    border-bottom: 3px solid #def3fa;
+}
+nav #activeBtn:hover
+{
+    background-color: rgba(0,0,0,0);
+    cursor: default;
+    border-radius:0px;
+    color: #666;
+}
+
