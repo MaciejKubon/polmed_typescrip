@@ -6,7 +6,7 @@
   font-family: "Poppins", sans-serif;
 }
 header {
-  padding: 5px 5%;
+  padding: 5px 10%;
   background-color: #def3fa;
   flex-direction: column;
   font-style: italic;
@@ -23,12 +23,12 @@ header a img {
 }
 main {
   margin-top: 40px;
-  padding: 5px 5%;
+  padding: 5px 10%;
   min-height: 90vh;
 }
 
 footer {
-  padding: 5px 5%;
+  padding: 5px 10%;
   background-color: #def3fa;
   display: flex;
   justify-content: space-evenly;
@@ -64,6 +64,6 @@ footer {
 
 @media (max-width: 600px) {
   .socialMedia {
-    min-width: 150px;
+    min-width: 120px;
   }
 }
