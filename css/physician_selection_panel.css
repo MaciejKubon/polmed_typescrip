@@ -1,32 +1,145 @@
 .physicianSelectionPanel {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 0px solid white;
+}
+.doctorCard {
+  background-color: lightblue;
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 2%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+  margin-bottom: 20px;
+  transition: 500ms;
+}
+.doctorPhoto {
+  width: 30%;
+  padding: 0px 5%;
+  min-width: 130px;
+  transition: 500ms;
+}
+.doctorPhoto img {
+  width: 100%;
+  border-radius: 20px;
+}
+.doctorData {
+  border-left: 1px solid gray;
+  width: 70%;
+  padding: 0px 5%;
+}
+.doctorName h2 {
+  font-size: 1.2em;
+  margin: 5px 0%;
+}
+.doctorSpeciality h3 {
+  font-size: 0.8em;
+  margin: 5px 0%;
+}
+.doctorRating {
+  margin: 20px 0px;
+  display: flex;
+}
+.stars {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 120px;
+}
+.stars img {
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+}
+.rating h3 {
+  margin-top: 4px;
+  font-size: 0.6em;
+  font-weight: normal;
+}
+.timetable {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.day {
+  margin: 5px 2%;
+  width: 16%;
+}
+.dayName {
+  text-align: center;
+}
+.dayName h5 {
+  font-size: 0.8em;
+}
+.dayName h6 {
+  font-size: 0.7em;
+}
+.dayData button {
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 10px;
+  height: 30px;
+  font-size: 0.8em;
+}
+.freeTerm {
+  background-color: #def3fa;
+  color: #130f40;
+}
+.freeTerm:hover {
+  cursor: pointer;
+  color: #0091ff;
+}
+.emptyTerm {
+  background-color: rgba(0, 0, 0, 0);
+}
+.bookedTerm {
+  background-color: rgba(0, 0, 0, 0);
+  text-decoration: line-through;
+}
+.moreTermButton {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.moreTermButton button {
+  padding: 8px 30px;
+  background-color: lightcyan;
+  border-radius: 15px;
+}
+.moreTermButton button:hover {
+  cursor: pointer;
+  color: #0091ff;
+}
+@media (max-width: 1024px) {
   .doctorCard {
-      background-color: lightblue;
-      width: 45%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      padding: 20px 2%;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      border-radius: 10px;
-      border: 1px solid lightgrey;
-      margin-bottom: 10px;
+    width: 100%;
+    transition: 500ms;
   }
-  .doctorPhoto
+}
+
+@media (max-width: 600px) {
+  .doctorCard {
+    flex-wrap: wrap;
+    
+  }
+  .doctorPhoto {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    transition: 500ms;
+  }
+  .doctorPhoto img {
+    width: 150px;
+  }
+  .doctorData
   {
-      width: 35%;
-      padding-right: 5%;
-      min-width: 150px;
+    border: 0px solid black;
+    width: 100%;
+    transition: 500ms;
   }
-  .doctorPhoto img
-  {
-      width: 100%;
-      border-radius: 20px;
-  }
-  
+}
