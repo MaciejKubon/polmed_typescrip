@@ -6,10 +6,22 @@
   font-family: "Poppins", sans-serif;
 }
 header {
-  padding: 5px 10%;
   background-color: #def3fa;
   flex-direction: column;
   font-style: italic;
+  box-shadow: 0 0.5em 1.5em rgba(0,0,0,0.1);
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  transition: top 400ms ease-in-out;
+}
+.topBar
+{
+  padding: 5px 10%;
+}
+.nav--up {
+  top: -8rem;
 }
 
 header a {
@@ -22,8 +34,8 @@ header a img {
   width: 30px;
 }
 main {
-  margin-top: 40px;
-  padding: 5px 5%;
+  margin-top: 150px;
+  padding: 5px 10%;
   min-height: 90vh;
 }
 

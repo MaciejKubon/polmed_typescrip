@@ -9,18 +9,26 @@
     <link rel="stylesheet" href="./css/main_style.css">
     <link rel="stylesheet" href="./css/navigation_bar.css">
     <link rel="stylesheet" href="./css/physician_selection_panel.css">
-
+    
     
 </head>
 <body>
     <header>
-        <div id="logo"><a href="#"><img src="./img/logo.png" alt="PolMed"> Polmed</a></div>
-        
+        <div class="topBar">
+            <div id="logo">
+                <a href="#">
+                    <img src="./img/logo.png" alt="PolMed"> 
+                    Polmed
+                </a>
+            </div>
+        </div>
+
+        <nav>
+            <button class="choiceOfSpecialitiesButton" id="activeBtn" >Pediatra</button>
+            <button class="choiceOfSpecialitiesButton">Rodzinny</button>
+        </nav>
     </header>
-    <nav>
-        <button class="choiceOfSpecialitiesButton" id="activeBtn" >Pediatra</button>
-        <button class="choiceOfSpecialitiesButton">Rodzinny</button>
-    </nav>
+
     <main>
         <div class="physicianSelectionPanel">
             <div class="doctorCard">
