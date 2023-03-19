@@ -1,0 +1,1 @@
+# polmed_typescrip
