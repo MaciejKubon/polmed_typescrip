@@ -35,11 +35,11 @@
   width: 70%;
   padding: 0px 5%;
 }
-.doctorName h2 {
+.doctorData h2 {
   font-size: 1.2em;
   margin: 5px 0%;
 }
-.doctorSpeciality h3 {
+.doctorData h5 {
   font-size: 0.8em;
   margin: 5px 0%;
 }
@@ -57,16 +57,17 @@
   height: 18px;
   margin-right: 5px;
 }
-.rating h3 {
+.doctorRating h3 {
   margin-top: 4px;
   font-size: 0.6em;
   font-weight: normal;
 }
-.timetable {
+.smallCalender{
   display: flex;
   flex-wrap: nowrap;
 }
 .day {
+  
   margin: 5px 2%;
   width: 16%;
 }

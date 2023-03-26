@@ -1,0 +1,44 @@
+{
+    "listOfSpeciality": [
+        "Rodzinny",
+        "Pediatra"
+    ],
+    "listOfDoctor": {
+        "Rodzinny": [
+            {
+                "id": "zaq1",
+                "type": "Pediatra",
+                "name": "Alicja Woźniak",
+                "img": "../img/zdj/1.png",
+                "rating": 4,
+                "number_of_ratings": 13
+            },
+            {
+                "id": "xsw2",
+                "type": "Pediatra",
+                "name": "Kamil Kołodziej",
+                "img": "../img/zdj/4.png",
+                "rating": 3,
+                "number_of_ratings": 13
+                }
+        ],
+        "Pediatra": [
+            {
+                "id": "cde3",
+                "type": "Rodzinny",
+                "name": "Emilia Kwiatkowska",
+                "img": "../img/zdj/2.png",
+                "rating": 4,
+                "number_of_ratings": 63
+             },
+            {
+                "id": "vfr4",
+                "type": "Rodzinny",
+                "name": "Dariusz Kaczmarczyk",
+                "img": "../img/zdj/3.jpg",
+                "rating": 2,
+                "number_of_ratings": 23
+                }
+        ]
+    }
+}

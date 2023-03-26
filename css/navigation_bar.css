@@ -6,6 +6,7 @@ nav
     align-items: center;
     flex-wrap: wrap;
     background-color:white;
+    text-align: center;
 
 }
 .choiceOfSpecialitiesButton
@@ -28,15 +29,16 @@ nav
     border-radius: 10px;
     border: 0px solid #def3fa;
 }
-nav #activeBtn
+nav .activeBtn
 {
     border-bottom: 3px solid #def3fa;
 }
-nav #activeBtn:hover
+nav .activeBtn:hover
 {
     background-color: rgba(0,0,0,0);
     cursor: default;
     border-radius:0px;
     color: #666;
+    border-bottom: 3px solid #def3fa;
 }
 
