@@ -1,0 +1,227 @@
+.SelectionPanel {
+  display: flex;
+  justify-content: space-between;
+}
+.informationPanel {
+  width: 50%;
+}
+.selectPanel {
+  width: 40%;
+}
+.basicInformation {
+  width: 100%;
+  background-color: lightblue;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 2%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.doctorPhoto {
+  padding: 0px 5%;
+  min-width: 130px;
+  width: 30%;
+}
+.doctorInformation {
+  border-left: 1px solid gray;
+  width: 70%;
+  padding: 0px 5%;
+}
+.doctorPhoto img {
+  width: 100%;
+  border-radius: 20px;
+}
+.doctorInformation h2 {
+  font-size: 1.2em;
+  margin: 5px 0%;
+}
+.doctorInformation h5 {
+  font-size: 0.8em;
+  margin: 5px 0%;
+}
+.doctorRating {
+  margin: 20px 0px;
+  display: flex;
+}
+.stars {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 120px;
+}
+.stars img {
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+}
+.doctorRating h3 {
+  margin-top: 4px;
+  font-size: 0.6em;
+  font-weight: normal;
+}
+.sendMsgButton {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.sendMsgButton button {
+  padding: 10px 5%;
+  border-radius: 10px;
+  background-color: #def3fa;
+  color: #130f40;
+}
+.sendMsgButton button:hover {
+  cursor: pointer;
+  color: #0091ff;
+}
+.moreInformation {
+  width: 100%;
+  background-color: lightblue;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px 2%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.doctorAddres {
+  width: 50%;
+}
+.doctorAddres h3 {
+  font-size: 0.9em;
+}
+.doctorPhoneNumber {
+  width: 50%;
+}
+.doctorPhoneNumber h3 {
+  text-align: end;
+  font-size: 0.9em;
+}
+.description {
+  margin-top: 10px;
+  background-color: rgb(255, 255, 255, 0.6);
+  width: 100%;
+  text-align: left;
+  font-size: 0.8em;
+  color: #130f40;
+  padding: 3px 3px;
+  min-height: 75px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+}
+.doctorAppointment {
+  background-color: lightblue;
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px 5%;
+}
+.targetSelection {
+  padding: 10px 0 20px 0;
+  border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+}
+.targetSelect
+{
+  width: 50%;
+  font-weight: 400;
+}
+.targetSelect select
+{
+  margin-top: 10px;
+  width: 100%;
+}
+.price{
+  text-align: end;
+  width: 40%;
+}
+.price h3
+{
+  font-size: 1em;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.timeSelection
+{
+  margin-top: 10px;
+  text-align: center;
+}
+.calenderBox
+{
+  display: flex;
+  margin-top: 10px;
+}
+.arrow
+{
+  width: 10%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content:  center;
+}
+.arrow button
+{
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #def3fa;
+  font-size: 1.3em;
+}
+.arrow button:hover{
+  cursor: pointer;
+  color: #0091ff;
+}
+
+.calender
+{
+  width: 80%;
+  display: flex;
+  flex-wrap:nowrap; 
+  justify-content: space-between;
+}
+.day
+{
+  width: 20%;
+  text-align: center;
+}
+.day h3
+{
+  font-size: 0.8em;
+  margin-top: 0;
+}
+.day button
+{
+  margin-top: 10px;
+  width: 80%;
+  border-radius: 10px;
+  padding: 5px 0;
+  background-color: #def3fa;
+  color: #130f40;
+}
+.hoverButton{
+  display: none;
+}
+.day button:hover {
+  cursor: pointer;
+  color: #0091ff;
+}
+#moreTerm{
+  margin-top: 20px;
+  width: 200px;
+  height: 40px;
+  background-color: #def3fa;
+  color: #130f40;
+  border-radius: 10px;
+}
+#moreTerm:hover{
+  cursor: pointer;
+  color: #0091ff;
+}
+#smallScreen
+{
+  display: none;
+}

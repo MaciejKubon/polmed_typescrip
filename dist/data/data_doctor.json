@@ -1,5 +1,4 @@
 {
-    "id_all_doctors": ["zaq1", "xsw2", "cde3", "vfr4"],
     "id": {
         "zaq1": {
             "type": "Pediatra",
@@ -9,7 +8,13 @@
             "number_of_ratings": 53,
             "addres": "Lwowska 197, Tarnów",
             "phone_number": "421499248",
-            "type_of_visit": ["wizyta kontrolna", "konsultacja", "choroba", "wypisanie recepty", "szczepienie"],
+            "type_of_visit": [
+                "wizyta kontrolna",
+                "konsultacja",
+                "choroba",
+                "wypisanie recepty",
+                "szczepienie"
+            ],
             "price_of_visit": {
                 "wizyta kontrolna": 180,
                 "konsultacja": 200,
@@ -27,7 +32,13 @@
             "number_of_ratings": 13,
             "addres": "Lwowska 197, Tarnów",
             "phone_number": "592377422",
-            "type_of_visit": ["wizyta kontrolna", "konsultacja", "choroba", "wypisanie recepty", "szczepienie"],
+            "type_of_visit": [
+                "wizyta kontrolna",
+                "konsultacja",
+                "choroba",
+                "wypisanie recepty",
+                "szczepienie"
+            ],
             "price_of_visit": {
                 "wizyta kontrolna": 110,
                 "konsultacja": 180,
@@ -45,7 +56,13 @@
             "number_of_ratings": 63,
             "addres": "Lwowska 197, Tarnów",
             "phone_number": "643982018",
-            "type_of_visit": ["wizyta kontrolna", "konsultacja", "choroba", "wypisanie recepty", "szczepienie"],
+            "type_of_visit": [
+                "wizyta kontrolna",
+                "konsultacja",
+                "choroba",
+                "wypisanie recepty",
+                "szczepienie"
+            ],
             "price_of_visit": {
                 "wizyta kontrolna": 220,
                 "konsultacja": 250,
@@ -63,7 +80,13 @@
             "number_of_ratings": 23,
             "addres": "Lwowska 197, Tarnów",
             "phone_number": "843256583",
-            "type_of_visit": ["wizyta kontrolna", "konsultacja", "choroba", "wypisanie recepty", "szczepienie"],
+            "type_of_visit": [
+                "wizyta kontrolna",
+                "konsultacja",
+                "choroba",
+                "wypisanie recepty",
+                "szczepienie"
+            ],
             "price_of_visit": {
                 "wizyta kontrolna": 80,
                 "konsultacja": 150,

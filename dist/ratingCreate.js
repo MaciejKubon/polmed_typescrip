@@ -4,10 +4,10 @@ export const renderRating = (star, numberRating) => {
     const starsElements = document.createElement('div');
     starsElements.classList.add('stars');
     for (let i = 0; i < star; i++) {
-        starsElements.innerHTML += `<img src="../img/star.png" alt="star">`;
+        starsElements.innerHTML += `<img src="./img/star.png" alt="star">`;
     }
     for (let i = star; i < 5; i++) {
-        starsElements.innerHTML += `<img src="../img/star_white.png" alt="star">`;
+        starsElements.innerHTML += `<img src="./img/star_white.png" alt="star">`;
     }
     doctorRatingElement.appendChild(starsElements);
     doctorRatingElement.innerHTML += `<h3>${numberRating}</h3>`;

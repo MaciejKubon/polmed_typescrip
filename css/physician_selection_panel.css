@@ -16,7 +16,6 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
   border-radius: 10px;
-  border: 1px solid lightgrey;
   margin-bottom: 20px;
   transition: 500ms;
 }
