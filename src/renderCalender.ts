@@ -6,20 +6,22 @@ let day_name: string[] = [];
 let day_data: string[] = [];
 const day_of_the_week: string[] = ["Pn", "Wt", "Śr", "Czw", "Pt"];
 
-const NumberMonth = (NumMonth:number) => {
-  let tekst:string = "";
+const NumberMonth = (NumMonth: number) => {
+  let tekst: string = "";
   if (NumMonth < 10) tekst = "0" + NumMonth;
   else tekst = NumMonth.toString();
 
   return tekst;
-}
+};
 
 export const renderCalender = (index: string) => {
+
   let time: number = today_data.getTime();
   const smallCalenderElement: HTMLElement = document.createElement("div");
   smallCalenderElement.classList.add("smallCalender");
+  smallCalenderElement.id = index;
   for (let i: number = 0; i < 5; i++) {
-    let dzien:Date = new Date(time);
+    let dzien: Date = new Date(time);
     if (dzien.getDay() != 0 && dzien.getDay() != 6) {
       day_data[i] =
         dzien.getDate() + "." + NumberMonth(Number(dzien.getMonth()) + 1);
@@ -53,10 +55,9 @@ export const renderCalender = (index: string) => {
     const calender = data[index];
     const dayTimmer = calender[day_data[i]];
     let godzina: string;
-    
-    
+
     for (let j: number = 0; j < 4; j++) {
-      godzina = dayTimmer[j];   
+      godzina = dayTimmer[j];
       if (godzina == "-")
         dayDataElement.innerHTML += '<button class="emptyTerm">-</button>';
       else if (godzina.length > 5)
@@ -64,9 +65,8 @@ export const renderCalender = (index: string) => {
           '<button class="bookedTerm">' + godzina.slice(0, -1) + "</button>";
       else
         dayDataElement.innerHTML +=
-          '<button class="freeTerm">' + godzina + "</button>";
+          `<button class="freeTerm" name=${index}>` + godzina + "</button>";
     }
-
     dayElement.appendChild(dayNameElement);
     dayElement.appendChild(dayDataElement);
 

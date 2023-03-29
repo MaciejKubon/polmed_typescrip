@@ -16,6 +16,7 @@ export const renderCalender = (index) => {
     let time = today_data.getTime();
     const smallCalenderElement = document.createElement("div");
     smallCalenderElement.classList.add("smallCalender");
+    smallCalenderElement.id = index;
     for (let i = 0; i < 5; i++) {
         let dzien = new Date(time);
         if (dzien.getDay() != 0 && dzien.getDay() != 6) {
@@ -70,7 +71,7 @@ export const renderCalender = (index) => {
                     '<button class="bookedTerm">' + godzina.slice(0, -1) + "</button>";
             else
                 dayDataElement.innerHTML +=
-                    '<button class="freeTerm">' + godzina + "</button>";
+                    `<button class="freeTerm" name=${index}>` + godzina + "</button>";
         }
         dayElement.appendChild(dayNameElement);
         dayElement.appendChild(dayDataElement);

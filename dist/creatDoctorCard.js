@@ -22,6 +22,22 @@ export const render = (doctorList) => {
         //Creat a doctor calender
         doctorDataElement.appendChild(renderCalender(element.id));
         doctorCardElement.appendChild(doctorDataElement);
+        const moreTermButtonElement = document.createElement('button');
+        moreTermButtonElement.classList.add('moreTermButton');
+        moreTermButtonElement.innerHTML = "Więcej terminów";
+        doctorDataElement.appendChild(moreTermButtonElement);
         mainElement.appendChild(doctorCardElement);
+        doctorPhotoElement.addEventListener("click", () => {
+            location.href = `./page/doctorPage.html?id=${element.id}`;
+        });
+        moreTermButtonElement.addEventListener("click", () => {
+            location.href = `./page/doctorPage.html?id=${element.id}`;
+        });
+        const buttonsElement = document.querySelectorAll(".freeTerm");
+        buttonsElement.forEach((e) => {
+            e.addEventListener("click", () => {
+                location.href = `./page/doctorPage.html?id=${e.getAttribute('name')}`;
+            });
+        });
     });
 };
