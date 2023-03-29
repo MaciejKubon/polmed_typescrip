@@ -1,6 +1,7 @@
 .SelectionPanel {
   display: flex;
   justify-content: space-between;
+  flex-wrap: nowrap;
 }
 .informationPanel {
   width: 50%;
@@ -26,14 +27,14 @@
   min-width: 130px;
   width: 30%;
 }
+.doctorPhoto img {
+  width: 100%;
+  border-radius: 20px;
+}
 .doctorInformation {
   border-left: 1px solid gray;
   width: 70%;
   padding: 0px 5%;
-}
-.doctorPhoto img {
-  width: 100%;
-  border-radius: 20px;
 }
 .doctorInformation h2 {
   font-size: 1.2em;
@@ -124,77 +125,70 @@
   border-bottom: 1px solid gray;
   display: flex;
   justify-content: space-between;
+  flex-wrap: nowrap;
 }
-.targetSelect
-{
+.targetSelect {
   width: 50%;
   font-weight: 400;
 }
-.targetSelect select
-{
+.targetSelect select {
   margin-top: 10px;
   width: 100%;
 }
-.price{
+.price {
   text-align: end;
   width: 40%;
 }
-.price h3
-{
+.price h3 {
   font-size: 1em;
   margin-bottom: 5px;
   font-weight: 500;
 }
-.timeSelection
-{
+.timeSelection {
   margin-top: 10px;
   text-align: center;
 }
-.calenderBox
-{
+.calenderBox {
   display: flex;
   margin-top: 10px;
+  flex-wrap: nowrap;
 }
-.arrow
-{
+.arrow {
   width: 10%;
   text-align: center;
   display: flex;
   align-items: center;
-  justify-content:  center;
+  justify-content: center;
 }
-.arrow button
-{
+.arrow button {
   width: 40px;
   height: 40px;
   border-radius: 20px;
   background-color: #def3fa;
   font-size: 1.3em;
 }
-.arrow button:hover{
+.arrow button:hover {
   cursor: pointer;
   color: #0091ff;
 }
-
-.calender
-{
+#smallScreen {
+  display: none;
+}
+.calender {
   width: 80%;
   display: flex;
-  flex-wrap:nowrap; 
+  flex-wrap: nowrap;
   justify-content: space-between;
 }
-.day
-{
+.day {
   width: 20%;
   text-align: center;
 }
-.day h3
-{
+.day h3 {
   font-size: 0.8em;
   margin-top: 0;
 }
-.day button
-{
+.day button {
   margin-top: 10px;
   width: 80%;
   border-radius: 10px;
@@ -202,14 +196,11 @@
   background-color: #def3fa;
   color: #130f40;
 }
-/* .hoverButton{
-  display: none;
-} */
 .day button:hover {
   cursor: pointer;
   color: #0091ff;
 }
-#moreTerm{
+#moreTerm {
   margin-top: 20px;
   width: 200px;
   height: 40px;
@@ -217,11 +208,71 @@
   color: #130f40;
   border-radius: 10px;
 }
-#moreTerm:hover{
+#moreTerm:hover {
   cursor: pointer;
   color: #0091ff;
 }
-#smallScreen
-{
-  display: none;
+
+@media (max-width: 1024px) {
+  .SelectionPanel {
+    flex-wrap: wrap;
+  }
+  .informationPanel {
+    width: 98%;
+  }
+  .selectPanel {
+    width: 93%;
+  }
+}
+
+@media (max-width: 600px) {
+  .basicInformation {
+    flex-wrap: wrap;
+  }
+  .doctorPhoto {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    transition: 500ms;
+  }
+  .doctorPhoto img {
+    width: 150px;
+  }
+  .doctorInformation {
+    border-left: 0px solid gray;
+    width: 100%;
+    padding: 0px 5%;
+  }
+  .calenderBox {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .targetSelection {
+    flex-wrap: wrap;
+  }
+  .targetSelect{
+    width: 100%;
+  }
+  .price{
+    margin-top: 10px;
+    width: 100%;
+    text-align: start;
+  }
+  .arrow {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+  .arrow button {
+    width: 100%;
+    height: 30px;
+  }
+  #smallScreen {
+    display: block;
+  }
+  .calender {
+    width: 100%;
+  }
+  #bigScreen {
+    display: none;
+  }
 }
