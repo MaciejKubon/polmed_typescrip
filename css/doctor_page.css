@@ -202,9 +202,9 @@
   background-color: #def3fa;
   color: #130f40;
 }
-.hoverButton{
+/* .hoverButton{
   display: none;
-}
+} */
 .day button:hover {
   cursor: pointer;
   color: #0091ff;
