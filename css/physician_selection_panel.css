@@ -21,7 +21,7 @@
 }
 .doctorPhoto {
   width: 30%;
-  padding: 0px 5%;
+  padding: 0px 5% 0 2%;
   min-width: 130px;
   transition: 500ms;
 }
