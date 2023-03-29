@@ -24,14 +24,9 @@ header {
   top: -8rem;
 }
 
-header a {
-  text-decoration: none;
-  color: #0091ff;
-  font-weight: bolder;
-  font-size: 2.3em;
-}
 header a img {
-  width: 30px;
+  margin-top: 10px;
+  width: 200px;
 }
 main {
   margin-top: 150px;
