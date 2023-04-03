@@ -1,4 +1,4 @@
-.SelectionPanel {
+.selectionPanel {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
@@ -180,6 +180,13 @@
   flex-wrap: nowrap;
   justify-content: space-between;
 }
+.week
+{
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
 .day {
   width: 20%;
   text-align: center;
@@ -193,12 +200,22 @@
   width: 80%;
   border-radius: 10px;
   padding: 5px 0;
+  color: #130f40;
+}
+.freeTerm {
   background-color: #def3fa;
   color: #130f40;
 }
-.day button:hover {
+.freeTerm:hover {
   cursor: pointer;
   color: #0091ff;
+}
+.emptyTerm {
+  background-color: rgba(0, 0, 0, 0);
+}
+.bookedTerm {
+  background-color: rgba(0, 0, 0, 0);
+  text-decoration: line-through;
 }
 #moreTerm {
   margin-top: 20px;
@@ -214,7 +231,7 @@
 }
 
 @media (max-width: 1024px) {
-  .SelectionPanel {
+  .selectionPanel {
     flex-wrap: wrap;
   }
   .informationPanel {

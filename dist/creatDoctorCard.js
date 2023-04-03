@@ -1,4 +1,4 @@
-import { renderRating } from "./ratingCreate.js";
+import { renderRating } from "./helpers/ratingCreate.js";
 import { renderCalender } from "./renderCalender.js";
 const mainElement = document.querySelector('.physicianSelectionPanel');
 export const render = (doctorList) => {

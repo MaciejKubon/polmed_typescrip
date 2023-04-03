@@ -1,7 +1,7 @@
 import data from "./data/data_calender.json" assert { type: "json" };
 
 const today_data: Date = new Date();
-const doba = 86400000;
+const doba:number = 86400000;
 let day_name: string[] = [];
 let day_data: string[] = [];
 const day_of_the_week: string[] = ["Pn", "Wt", "Śr", "Czw", "Pt"];
@@ -53,7 +53,7 @@ export const renderCalender = (index: string) => {
     const dayDataElement: HTMLElement = document.createElement("div");
     dayDataElement.classList.add("dayData");
     const calender = data[index];
-    const dayTimmer = calender[day_data[i]];
+    const dayTimmer:string[] = calender[day_data[i]];
     let godzina: string;
 
     for (let j: number = 0; j < 4; j++) {

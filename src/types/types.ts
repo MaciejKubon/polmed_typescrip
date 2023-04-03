@@ -6,6 +6,27 @@ export interface dataDoctor {
     rating: number;
     number_of_ratings: number;
   }
+export interface price{
+  "-"?: string;
+  "wizyta kontrolna"?: number;
+  konsultacja?: number;
+  choroba?: number;
+  "wypisanie recepty"?: number;
+  szczepienie?: number;
+}
+
+export interface doctorData{
+  type: string;
+  name: String;
+  img: string;
+  rating: number;
+  number_of_ratings: number;
+  addres: String;
+  phone_number: string;
+  type_of_visit: String[];
+  price_of_visit: price;
+  doctor_description: String;
+}
 
 
   // export interface dataDoctor {
