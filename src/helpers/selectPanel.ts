@@ -2,7 +2,9 @@ import {price} from "../types/types"
 import { calenderRender } from "./calenderRender.js";
 
 
-const typeOfVisit = (visitTypes:String[]) =>{
+const typeOfVisit = (visitTypes:String[], visitPrice:price) =>{
+    const targetSelectionElement:HTMLElement = document.createElement('div');
+    targetSelectionElement.classList.add('targetSelection');
     const targetSelectElement:HTMLElement= document.createElement('div');
     targetSelectElement.classList.add('targetSelect');
     targetSelectElement.innerHTML=`<label for="typeOfVisit">Wybierz cel wizyty:</label>`;
@@ -17,10 +19,21 @@ const typeOfVisit = (visitTypes:String[]) =>{
         selectElement.appendChild(option);  
     });
     targetSelectElement.appendChild(selectElement);
+    targetSelectionElement.appendChild(targetSelectElement);
+    //Cena
+    const priceElement:HTMLElement = document.createElement('div');
+    priceElement.classList.add('price');
+    priceElement.innerHTML=`<h3>Cena: </h3><h3 id="price">-</h3>`;
+    targetSelectionElement.appendChild(priceElement);
 
-    return targetSelectElement;
-
-
+    selectElement.addEventListener("change",(element)=>{
+        const priceElement:HTMLElement = document.querySelector("#price");
+        if(selectElement.value=="-")
+            priceElement.innerHTML="-";
+        else
+            priceElement.innerHTML=`${visitPrice[selectElement.value]} zł`;
+    })
+    return targetSelectionElement;
 }
 
 export const selectPanel=(visitTypes:String[], visitPrice: price, date:object)=>{
@@ -29,15 +42,8 @@ export const selectPanel=(visitTypes:String[], visitPrice: price, date:object)=>
     const doctorAppointmentElement:HTMLElement = document.createElement('div');
     doctorAppointmentElement.classList.add('doctorAppointment');
     //Wybór wizyty
-    const targetSelectElement:HTMLElement = document.createElement('div');
-    targetSelectElement.classList.add('targetSelection');
-    targetSelectElement.appendChild(typeOfVisit(visitTypes));
-    doctorAppointmentElement.appendChild(targetSelectElement);
-    //Cena
-    const priceElement:HTMLElement = document.createElement('div');
-    priceElement.classList.add('price');
-    priceElement.innerHTML=`<h3>Cena: </h3><h3 id="price">-</h3>`;
-    targetSelectElement.appendChild(priceElement);
+    doctorAppointmentElement.appendChild(typeOfVisit(visitTypes,visitPrice));
+    
     //Kalendarz
     const timeSelectionElement:HTMLElement = document.createElement('div');
     timeSelectionElement.classList.add('timeSelection');

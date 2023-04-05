@@ -24,15 +24,18 @@ let pressBool: Boolean = false;
 moreTermButton.addEventListener("click", (event) => {
   const hoverButtonElement: NodeListOf<Element> =
     document.querySelectorAll(".day div");
-  hoverButtonElement.forEach((element) => {
-    if (!pressBool) element.animate(expandCalender, 1000);
-    element.toggleAttribute("hidden");
+  hoverButtonElement.forEach((element: HTMLElement) => {
+    if (!pressBool) {
+      element.animate(expandCalender, 1000);
+      element.style.setProperty("display","block");
+    } else {
+      element.style.setProperty("display","none");
+    }
   });
   pressBool
     ? (moreTermButton.innerHTML = "Rozwiń")
     : (moreTermButton.innerHTML = "Zwiń");
   pressBool = !pressBool;
-  console.log(pressBool);
 });
 
 //Obsługa wyboru rodzaju wizyty
@@ -52,12 +55,4 @@ const price_of_visit: {
   szczepienie: 210,
 };
 
-const changeTypeOfVisit: HTMLSelectElement =
-  document.querySelector("#typeOfVisit");
 
-changeTypeOfVisit.addEventListener("change", () => {
-  const changePrice: HTMLElement = document.querySelector("#price");
-  changeTypeOfVisit.value == "-"
-    ? (changePrice.innerHTML = price_of_visit[changeTypeOfVisit.value])
-    : (changePrice.innerHTML = price_of_visit[changeTypeOfVisit.value] + " zł");
-});
