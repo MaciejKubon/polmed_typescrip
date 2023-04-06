@@ -43,6 +43,7 @@ const typeOfVisit = (visitTypes: String[], visitPrice: price) => {
   targetSelectionElement.appendChild(priceElement);
 
   selectElement.addEventListener("change", (element) => {
+    selectElement.style.background="white"
     const priceElement: HTMLElement = document.querySelector("#price");
     if (selectElement.value == "-") priceElement.innerHTML = "-";
     else priceElement.innerHTML = `${visitPrice[selectElement.value]} zł`;
@@ -135,6 +136,7 @@ export const selectPanel = (
       const nextWeekElement: HTMLElement = document.querySelector(
         `#week${weekNumber}`
       );
+      nextWeekElement.animate([{opacity:0},{opacity:1}],1000);
       nextWeekElement.style.setProperty("display", "flex");
     }
     if (weekNumber == 5) {
@@ -160,6 +162,7 @@ export const selectPanel = (
       const nextWeekElement: HTMLElement = document.querySelector(
         `#week${weekNumber}`
       );
+      nextWeekElement.animate([{opacity:0},{opacity:1}],1000);
       nextWeekElement.style.setProperty("display", "flex");
     }
     if (weekNumber == 5) {
@@ -184,6 +187,7 @@ export const selectPanel = (
       const nextWeekElement: HTMLElement = document.querySelector(
         `#week${weekNumber}`
       );
+      nextWeekElement.animate([{opacity:0},{opacity:1}],1000);
       nextWeekElement.style.setProperty("display", "flex");
     }
     if(weekNumber==1){
