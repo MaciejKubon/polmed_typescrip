@@ -20,7 +20,7 @@ export const informationPanel = (doctorData: doctorData) => {
   basicInformationElement.appendChild(doctorDataElement);
   //Creat a docotr rating
   doctorDataElement.appendChild(
-    renderRating(doctorData.rating, doctorData.number_of_ratings)
+    renderRating(doctorData.rating, doctorData.number_of_ratings,"../img/")
   );
 
   //Create message button

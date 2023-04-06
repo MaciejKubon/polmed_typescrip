@@ -17,7 +17,7 @@ export const informationPanel = (doctorData) => {
   <h5>${doctorData.type}</h5>`;
     basicInformationElement.appendChild(doctorDataElement);
     //Creat a docotr rating
-    doctorDataElement.appendChild(renderRating(doctorData.rating, doctorData.number_of_ratings));
+    doctorDataElement.appendChild(renderRating(doctorData.rating, doctorData.number_of_ratings, "../img/"));
     //Create message button
     doctorDataElement.innerHTML += `<div class="sendMsgButton"><button>Wyślij wiadomość</button></div>`;
     //create div more information
