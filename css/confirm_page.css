@@ -1,81 +1,101 @@
-.confirmCard{
-    background-color: lightblue;
-    margin: 0px 15%;
-    width: 60%;
-    padding: 10px 5%;
-    border-radius: 10px;
+.confirmCard {
+  background-color: lightblue;
+  margin: 0px 15%;
+  width: 60%;
+  padding: 10px 5%;
+  border-radius: 10px;
 }
-.confirmCard h1
-{
-    margin-top: 10px;
-    font-size: 1.3em;
-    padding-bottom: 10px;
-    font-weight: 400;
-    text-align: center;
-    color: #130f40;
-    border-bottom: 1px solid gray;;
+.confirmCard h1 {
+  margin-top: 10px;
+  font-size: 1.3em;
+  padding-bottom: 10px;
+  font-weight: 400;
+  text-align: center;
+  color: #130f40;
+  border-bottom: 1px solid gray;
 }
-.informationPanel
-{
-    margin-top: 20px;
-    display: flex;
-    justify-content:space-between;
-    flex-wrap: wrap;
+.informationPanel {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.informationPanel h2
-{
-    width: 100%;
-    font-size: 1.2em;
-    margin-bottom: 20px;
+.informationPanel h2 {
+  width: 100%;
+  font-size: 1.2em;
+  margin-bottom: 20px;
 }
-.leftSide
-{
-    width: 25%;
+.leftSide {
+  width: 25%;
 }
-.leftSide img
-{
-    width: 100%;
-    border-radius: 10px;
+.leftSide img {
+  width: 100%;
+  border-radius: 10px;
 }
-.rightSide
-{
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.rightSide {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.rightSide h3
-{
-    margin-top: 30px;
-    font-size: 1em;
-    width: 50%;
+.rightSide h3 {
+  margin-top: 30px;
+  font-size: 1em;
+  width: 50%;
 }
-.rightSide :nth-child(2n)
-{
-   text-align: end;
+.rightSide :nth-child(2n) {
+  text-align: end;
 }
 
-.rightSide h2{
-    margin-bottom: 30px;
-    margin-top: 20px;
-    text-align: center;
+.rightSide h2 {
+  margin-bottom: 30px;
+  margin-top: 20px;
+  text-align: center;
 }
-.cancelVisit
-{
-    display: flex;
+.cancelVisit {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+}
+.cancelVisit button {
+  width: 30%;
+  background-color: #e36a3e;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 1em;
+  min-width: 200px;
+}
+.cancelVisit button:hover {
+  color: white;
+  cursor: pointer;
+}
+@media (max-width: 1024px) {
+  .informationPanel {
     justify-content: center;
-    margin: 30px auto;
+  }
+  .informationPanel h2 {
+    text-align: center;
+  }
+  .leftSide {
+    width: 100%;
+    padding: 0px 25%;
+  }
+  .rightSide {
+    width: 100%;
+  }
+  .rightSide h3 {
+    width: 100%;
+    margin-top: 15px;
+  }
+  .rightSide :nth-child(2n) {
+    text-align: start;
+  }
 }
-.cancelVisit button
-{
-    width: 30%;
-    background-color: #e36a3e;
-    height: 50px;
-    border-radius: 10px;
-    font-size: 1em;
+@media (max-width: 600px) {
+    .confirmCard
+    {
+        width: 90%;
+        margin: 0px 0%;
+    }
 }
-.cancelVisit button:hover{
-    color: white;
-    cursor: pointer;
-    
-}
+
