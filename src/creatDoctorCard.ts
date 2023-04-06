@@ -13,7 +13,7 @@ export const render = (doctorList: dataDoctor[]) => {
         //Create a photo
         const doctorPhotoElement: HTMLElement = document.createElement('div');
         doctorPhotoElement.classList.add('doctorPhoto');
-        doctorPhotoElement.innerHTML=`<img src="./img/zdj/${element.img}" alt="${element.name}">`;
+        doctorPhotoElement.innerHTML=`<img src="img/zdj/${element.img}" alt="${element.name}">`;
         doctorCardElement.appendChild(doctorPhotoElement);
         //Create a docotr data
         const doctorDataElement: HTMLElement = document.createElement('div');
@@ -21,7 +21,7 @@ export const render = (doctorList: dataDoctor[]) => {
         doctorDataElement.innerHTML=`<h2>${element.name}</h2> 
         <h5>${element.type}</h5>`;
         //Creat a docotr rating
-        doctorDataElement.appendChild(renderRating(element.rating,element.number_of_ratings,"./img/"));
+        doctorDataElement.appendChild(renderRating(element.rating,element.number_of_ratings,"img/"));
         //Creat a doctor calender
         doctorDataElement.appendChild(renderCalender(element.id));
 
