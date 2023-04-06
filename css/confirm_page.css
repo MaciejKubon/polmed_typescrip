@@ -1,0 +1,81 @@
+.confirmCard{
+    background-color: lightblue;
+    margin: 0px 15%;
+    width: 60%;
+    padding: 10px 5%;
+    border-radius: 10px;
+}
+.confirmCard h1
+{
+    margin-top: 10px;
+    font-size: 1.3em;
+    padding-bottom: 10px;
+    font-weight: 400;
+    text-align: center;
+    color: #130f40;
+    border-bottom: 1px solid gray;;
+}
+.informationPanel
+{
+    margin-top: 20px;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.informationPanel h2
+{
+    width: 100%;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.leftSide
+{
+    width: 25%;
+}
+.leftSide img
+{
+    width: 100%;
+    border-radius: 10px;
+}
+.rightSide
+{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.rightSide h3
+{
+    margin-top: 30px;
+    font-size: 1em;
+    width: 50%;
+}
+.rightSide :nth-child(2n)
+{
+   text-align: end;
+}
+
+.rightSide h2{
+    margin-bottom: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+.cancelVisit
+{
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+.cancelVisit button
+{
+    width: 30%;
+    background-color: #e36a3e;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 1em;
+}
+.cancelVisit button:hover{
+    color: white;
+    cursor: pointer;
+    
+}
