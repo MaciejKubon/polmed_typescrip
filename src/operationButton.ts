@@ -38,21 +38,3 @@ moreTermButton.addEventListener("click", (event) => {
   pressBool = !pressBool;
 });
 
-//Obsługa wyboru rodzaju wizyty
-const price_of_visit: {
-  "-": string;
-  "wizyta kontrolna"?: number;
-  konsultacja?: number;
-  choroba?: number;
-  "wypisanie recepty"?: number;
-  szczepienie?: number;
-} = {
-  "-": "-",
-  "wizyta kontrolna": 180,
-  konsultacja: 200,
-  choroba: 240,
-  "wypisanie recepty": 80,
-  szczepienie: 210,
-};
-
-

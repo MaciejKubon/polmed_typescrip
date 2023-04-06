@@ -18,6 +18,7 @@ export const calenderRender = (date) => {
     for (let weekNumber = 1; weekNumber < 6; weekNumber++) {
         const weekElement = document.createElement("div");
         weekElement.classList.add("week");
+        weekElement.id = `week${weekNumber}`;
         if (weekNumber != 1) {
             weekElement.style.setProperty("display", "none");
         }

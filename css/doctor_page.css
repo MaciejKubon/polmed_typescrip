@@ -152,22 +152,18 @@
   display: flex;
   margin-top: 10px;
   flex-wrap: nowrap;
-}
-.arrow {
-  width: 10%;
-  text-align: center;
-  display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
-.arrow button {
+
+.arrow {
   width: 40px;
   height: 40px;
   border-radius: 20px;
   background-color: #def3fa;
   font-size: 1.3em;
 }
-.arrow button:hover {
+.arrow:hover {
   cursor: pointer;
   color: #0091ff;
 }
