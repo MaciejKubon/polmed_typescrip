@@ -42,7 +42,7 @@ clickButtonElement.forEach((element, index) => {
     const targetSelectValue: String = targetSelectElement.value;
 
     targetSelectValue != "-"
-      ? (location.href = `./confirmPage.html?${id}#${element.value}#${targetSelectValue}`)
+      ? (location.href = `./confirmPage.html?${id}#${element.value}#${targetSelectValue.replace(" ","_")}`)
       : noChoiceOfVisitType();
   });
 });

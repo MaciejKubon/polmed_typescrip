@@ -4,7 +4,7 @@
         "zaq1": {
             "type": "Pediatra",
             "name": "Alicja Woźniak",
-            "img": "/zdj/1.png",
+            "img": "1.png",
             "rating": 4,
             "number_of_ratings": 53,
             "addres": "Lwowska 197, Tarnów",
@@ -23,7 +23,7 @@
         "xsw2": {
             "type": "Pediatra",
             "name": "Kamil Kołodziej",
-            "img": "/zdj/4.png",
+            "img": "4.png",
             "rating": 3,
             "number_of_ratings": 13,
             "addres": "Lwowska 197, Tarnów",
@@ -42,7 +42,7 @@
         "cde3": {
             "type": "Rodzinny",
             "name": "Emilia Kwiatkowska",
-            "img": "/zdj/2.png",
+            "img": "2.png",
             "rating": 4,
             "number_of_ratings": 63,
             "addres": "Lwowska 197, Tarnów",
@@ -61,7 +61,7 @@
         "vfr4": {
             "type": "Rodzinny",
             "name": "Dariusz Kaczmarczyk",
-            "img": "/zdj/3.jpg",
+            "img": "3.jpg",
             "rating": 2,
             "number_of_ratings": 23,
             "addres": "Lwowska 197, Tarnów",

@@ -8,7 +8,7 @@ export const informationPanel = (doctorData) => {
     //Create a photo
     const doctorPhotoElement = document.createElement("div");
     doctorPhotoElement.classList.add("doctorPhoto");
-    doctorPhotoElement.innerHTML = `<img src="../img${doctorData.img}" alt="${doctorData.name}">`;
+    doctorPhotoElement.innerHTML = `<img src="../img/zdj/${doctorData.img}" alt="${doctorData.name}">`;
     basicInformationElement.appendChild(doctorPhotoElement);
     //Create a docotr data
     const doctorDataElement = document.createElement("div");

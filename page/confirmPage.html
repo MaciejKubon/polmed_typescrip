@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/main_style.css" />
     <link rel="stylesheet" href="../css/navigation_bar.css" />
     <link rel="stylesheet" href="../css/confirm_page.css"/>
+    <link rel="stylesheet" href="../css/window.css">
   </head>
   <body>
     <header>
@@ -26,16 +27,17 @@
             <h1>Wizyta potwierdzona</h1>
             <div class="informationPanel">
                 <h2>Szczegóły wizyty</h2>
-                <div class="leftSide"><img src="../img/zdj/1.png"></div>
+                <div class="leftSide"></div>
                 <div class="rightSide">
-                    <h3>Alicja Woźniak</h3>
-                    <h3>Lwowska 197, Tarnów</h3>
-                    <h3>Wypisanie recepty: 80zł</h3>
-                    <h3>10:00             6.04.2023</h3>
-                    <h2>Płatność tylko gotówką</h2>
                 </div>
             </div>
             <div class="cancelVisit"><button>Anuluj wizytę</button></div>
+        </div>
+        <div id="windowOverlay">
+          <div class="windowContent">
+            <h2>Anulowano wizyte</h2>
+            <button class="windowClose">OK</button>
+          </div>
         </div>
     </main>
     <footer>
@@ -46,5 +48,6 @@
       <div class="socialMedia"><a href="#">a</a></div>
     </footer>
     <script src="../dist/headerHiding.js"></script>
+    <script type="module" src="../dist/confirmPageJS.js" defer></script>
   </body>
 </html>

@@ -76,7 +76,7 @@ export const calenderRender = (date) => {
                         '<button class="bookedTerm">' + godzina.slice(0, -1) + "</button>";
                 else
                     dayElement.innerHTML +=
-                        `<button class="freeTerm" value="${day_data[i]}_${godzina}">${godzina}</button>`;
+                        `<button class="freeTerm" value="${day_data[i]}T${godzina}">${godzina}</button>`;
             }
             const hoverButtonElement = document.createElement('div');
             hoverButtonElement.classList.add('hoverButton');
