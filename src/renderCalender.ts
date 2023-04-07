@@ -1,5 +1,5 @@
 
-const data = await fetch("./dist/data/data_calender.json").then((data) => data.json());
+const data = await fetch("../dist/data/data_calender.json").then((data) => data.json());
 
 
 const today_data: Date = new Date();
