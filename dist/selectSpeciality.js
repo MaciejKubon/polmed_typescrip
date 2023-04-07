@@ -1,4 +1,4 @@
-const data = await fetch("../dist/data/setOfSpeciality.json").then((data) => data.json());
+const data = await fetch("./dist/data/setOfSpeciality.json").then((data) => data.json());
 import { render } from "./creatDoctorCard.js";
 const listOfSpeciality = data.listOfSpeciality;
 const creatNavSpeciality = () => {
