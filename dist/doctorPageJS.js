@@ -1,5 +1,7 @@
-import date from "./data/data_calender.json" assert { type: "json" };
-import data from "./data/data_doctor.json" assert { type: "json" };
+//import date from "./data/data_calender.json" assert { type: "json" };
+const date = await fetch("../dist/data/data_calender.json").then((data) => data.json());
+//import data from "./data/data_doctor.json" assert { type: "json" };
+const data = await fetch("../dist/data/data_doctor.json").then((data) => data.json());
 import { informationPanel } from "./helpers/informationPanel.js";
 import { selectPanel } from "./helpers/selectPanel.js";
 const link = location.href;
