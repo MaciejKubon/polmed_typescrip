@@ -1,4 +1,4 @@
-import data from "./data/data_doctor.json" assert { type: "json" };
+const data = await fetch("../dist/data/data_doctor.json").then((data) => data.json());
 const link = location.href;
 const information = link.split("?")[1];
 const id = information.split("#")[0];
@@ -26,3 +26,4 @@ cancelVisitButton.addEventListener("click", () => {
         location.href = `../index.html`;
     });
 });
+export {};

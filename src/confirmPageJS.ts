@@ -1,4 +1,5 @@
-import data from "./data/data_doctor.json" assert { type: "json" };
+const data = await fetch("../dist/data/data_doctor.json").then((data) => data.json());
+
 import {doctorData} from "./types/types"
 const link: string = location.href;
 const information:string = link.split("?")[1];
