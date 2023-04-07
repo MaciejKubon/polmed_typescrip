@@ -1,4 +1,4 @@
-const data = await fetch("../data/data_calender.json").then((data) => data.json());
+const data = await fetch("dist/data/data_calender.json").then((data) => data.json());
 const today_data = new Date();
 const doba = 86400000;
 let day_name = [];
